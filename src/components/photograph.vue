@@ -60,7 +60,7 @@ export default {
       }
     },
     postImg () {
-      // 这里写接口
+      this.$emit('upload',this.headerImage)
       this.$emit('input', this.headerImage);
       this.$refs.avatar.style.background = `url(${this.headerImage})no-repeat center/contain`
     },
@@ -198,16 +198,16 @@ export default {
 <style lang="less" scoped>
 .avatar {
   position: relative;
-  margin: 0 auto 0.8rem;
-  width: 1.44rem;
-  height: 1.44rem;
+  margin: 0 auto 80px;
+  width: 144px;
+  height: 144px;
   background: url(../assets/images/ic_pic.png) no-repeat center/contain;
   border-radius: 50%;
   &.complete .avatar-label {
-    top: 0.93rem;
-    left: 1rem;
-    width: 0.64rem;
-    height: 0.64rem;
+    top: 93px;
+    left: 100px;
+    width: 64px;
+    height: 64px;
     background: url(../assets/images/ic_pic_upload.png) no-repeat center/contain;
   }
   .avatar-file {
