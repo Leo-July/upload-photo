@@ -11,7 +11,7 @@ vue 组件  h5调用摄像头拍照或从相册中选择图片
 npm install exif-js --save
 ```
 
-##  [demo](http://demo.leojuly.top/uploadPhoto/)
+##  [demo](http://demo.leojuly.top/vue-demo/)
 ```
 <template>
   <photograph v-model="headImage" @upload="upload"></photograph>
